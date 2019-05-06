@@ -43,8 +43,13 @@ end
 
 def apply_clearance(cart)
   cart.each do |item, value|
+<<<<<<< HEAD
     if cart[item][:clearance] == true
       cart[item][:price] -= (cart[item][:price] * 0.20)
+=======
+    if item[:clearance] == true
+      puts "test"
+>>>>>>> 08660f6e5c5210900bc7fdc2bac9ae95ff48524e
     end
   end
   cart
